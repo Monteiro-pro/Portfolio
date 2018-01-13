@@ -163,20 +163,6 @@ h3{
 /*## ======== ##*/
 
 /*## Sobre Mim ##*/
-.texto_box1 {
-	font-size: 20px;
-	color: #58595b;
-	font-weight: bold;
-}
-
-.texto_box1:hover {
-	color: #f51a25;
-}
-
-#font_box1_email {
-	font-size: 14.5px;
-}
-
 .marginleft_img{
 	margin-left: 20px;
 }
@@ -201,26 +187,6 @@ h3{
 	align-items: center;
 	color: #58595b;
 }
-
-.box_contato1 {
-	cursor: pointer;
-	width: 291px;
-	height: 70px;
-	border: 1px solid #58595b;
-	position: relative;
-	border-radius: 5px;
-	display: flex;
-	align-items: center;
-	transition: background 0.4s, color 0.4s;
-}
-
-.box_contato1:hover{
-	background-color: rgba(30,58,79,0.3);
-}
-
-.marginlef_box1{
-	margin-left: 48.5px;
-}
 /*## ======== ##*/
 
 /*## Curriculo ##*/
@@ -241,6 +207,27 @@ h3{
 .subtitulos_kill {
 	margin-bottom: 8px;
 	font-weight: bold;
+}
+
+#box_download div,#box_download span{
+	color: white;
+}
+
+#box_download .texto_box_contato:hover{
+	color: #1e3a4f;
+}
+
+#box_download .box_contato{
+	background-color: rgba(255,43,27,1);
+	width: 220px;
+}
+
+#box_download .box_contato:hover{
+	background-color: rgba(255,43,27,0.8);
+}
+
+#box_download .box_contato img{
+	margin-left: 15px;
 }
 /*## ======== ##*/
 
@@ -332,15 +319,6 @@ h3{
 /*## ======== ##*/
 
 /*## Contato ##*/
-.texto_box2 {
-	font-weight: bold;
-	color: #58595b;
-}
-
-.texto_box2:hover {
-	color: #f51a25;
-}
-
 .titulo_contato{
 	font-size: 25px;
 	margin-top: 10px;
@@ -358,19 +336,20 @@ h3{
 	margin-top: 15px;
 }
 
-.box_contato2 {
-	width: 291px;
-	height: 155px;
-	border: 0px solid #58595b;
-	position: relative;
-	border-radius: 5px;
-	display: flex;
-	text-align: center;
-	justify-content: center;
+#box_contato2 .texto_box_contato{
+	font-size: 15px;
 }
 
-.marginlef_box2{
-	margin-left: 48.5px;
+#box_contato2 .box_contato {
+	height: 155px;
+	text-align: center;
+	justify-content: center;
+	border: none;
+	cursor: default;
+}
+
+#box_contato2 .box_contato:hover{
+	background-color: rgba(0,0,0,0);
 }
 /*## ======== ##*/
 
@@ -380,13 +359,43 @@ h3{
 	font-size: 16px;
 }
 
+.texto_box_contato {
+	font-size: 20px;
+	color: #58595b;
+	font-weight: bold;
+}
+
+.texto_box_contato:hover {
+	color: #f51a25;
+}
+
 .margintop_box_contato{
 	margin-top: 50px;
 	color: #58595b;
 }
 
+.marginlef_box_contato{
+	margin-left: 48.5px;
+}
+
 .marginleft_texto {
 	margin-left: 50px;
+}
+
+.box_contato {
+	cursor: pointer;
+	width: 291px;
+	height: 70px;
+	border: 1px solid #58595b;
+	position: relative;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	transition: background 0.4s, color 0.4s;
+}
+
+.box_contato:hover{
+	background-color: rgba(30,58,79,0.3);
 }
 
 .background2 {
@@ -421,12 +430,11 @@ h3{
 /*#### Media queries ####*/
 
 @media screen and (max-width: 767px) {
-	
-	.box_contato1, .box_contato2, .Hob_Int {
+	.box_contato, .margintop_box_contato .box_contato, .Hob_Int {
 		margin-left: 0px;
 	}
 
-	.marginlef_box1 {
+	.marginlef_box_contato {
 		margin-left: 0px;
 		margin-top: 5px;
 	}
@@ -446,10 +454,18 @@ h3{
 		margin-left: 10px;
 		margin-right: 10px;
 	}
+
+	#box_download{
+		margin-top: 20px;
+	}
+
+	#icone1{
+		margin-left: 55px;
+	}
 }
 
 @media screen and (max-width: 1200px) and (min-width: 767px) {
-	.marginlef_box1,.box_contato2 {
+	.marginlef_box_contato,.margintop_box_contato .box_contato {
 		margin-top: 10px;
 		margin-left: 0px;
 	}
@@ -458,14 +474,14 @@ h3{
 		opacity: 0;
 	}
 
-	.margin_nivel {
-		margin-left: 50px;
-	}
-
 	.margintop_box_contato{
 		margin-top: 50px;
 		display: flex;
 		align-items: center;
 		flex-direction: column;
+	}
+
+	#box_download{
+		margin-top: 20px;
 	}
 }
