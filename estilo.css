@@ -1,0 +1,512 @@
+
+/*## Tipografia Geral ##*/
+body{
+	background-image: url("img/back.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: #58595b;
+	overflow-y: scroll;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover, a:focus{
+	text-decoration: none;
+}
+
+h3{
+	color: white;
+	margin-left: 20px;
+	margin-bottom: 18px;
+}
+/*## ======== ##*/
+
+/*## Tab Bar ##*/
+/* Tipografia */
+#nome h1{
+	font-family: Bebas Neue Regular;
+	font-size: 60px;
+	letter-spacing: 7px;
+	color: #1e3a4f;
+	text-align: center;
+}
+
+#nome p{
+	text-align: center;
+	color: #1e3a4f;
+	font-family: Source Sans Pro Light;
+	font-weight: bold;
+}
+
+.tabtitulo{
+	color: #1e3a4f;
+}
+/*==*/
+
+/* Efeito Tab Bar Emotes */
+.nav-tabs > li.active> a, .nav-tabs > li.active> a:focus{
+	color: #1c87e5;
+	background:rgba(0,0,0,0.2);
+	border-radius: 30px;
+}
+
+.nav-tabs > li.active> a:hover{
+
+	background-color: rgba(255,255,255,1);
+	color: #1c87e5;
+}
+
+.nav-tabs > li > a:hover {
+	border-radius: 30px;
+	color: #1c87e5;
+	transition: background 0.4s, color 0.4s;
+}
+
+.nav-tabs > li > a {
+	transition: background 0.4s, color 0.4s;
+	font-weight: bold;	
+}
+
+.page-header {
+	border-bottom-color: #1e3a4f;
+}
+
+.nav-tabs.nav-justified > li > a {
+	border-bottom-color: #1e3a4f;
+	border-bottom-width: 2px;
+	border: none none 2px none;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+}
+ 
+.nav-tabs.nav-justified > li.active > a:focus, .nav-tabs.nav-justified > li.active > a, .nav-tabs.nav-justified > li.active > a:hover{
+	border-bottom-width: 3px;
+	border-bottom-color: #1e3a4f;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+}
+
+
+/*-- Sobre Mim --*/
+#icone1 {
+	float: left;
+	width: 29px;
+	height: 20px; 
+	margin-left: 35px; 
+	position: absolute; 
+	background-image: url('img/balao.png');
+	transition: background 0.4s, color 0.4s;
+}
+
+.nav-tabs.nav-justified > li.active > a:hover > div > #icone1, .nav-tabs.nav-justified  > li > a:hover > div > #icone1{
+	background-image: url('img/balao.png');
+}
+
+.nav-tabs.nav-justified > li.active  > a > div > #icone1 {
+	background-image: url('img/balao2.png');
+}
+
+/*.nav-tabs.nav-justified  > li > a > div > #icone1 {
+	background-image: url('img/balao.png');
+	transition: background 1s ease-in-out;
+}*/
+/*-*/
+
+/*-- Curriculo --*/
+#icone2 {
+	float: left;
+	width: 15px;
+	height: 26px; 
+	margin-left: 60px; 
+	position: absolute; 
+	background-image: url('img/tie.png');
+	transition: background 0.4s, color 0.4s;
+}
+
+.nav-tabs.nav-justified > li.active > a:hover > div > #icone2, .nav-tabs.nav-justified > li > a:hover > div > #icone2 {
+	background-image: url('img/tie.png');
+}
+
+.nav-tabs.nav-justified > li.active  > a > div > #icone2 {
+	background-image: url('img/tie2.png');
+}
+/*-*/
+
+/*-- Portfolio --*/
+#icone3 {
+	float: left;
+	width: 23px;
+	height: 25px;  
+	margin-left: 55px; 
+	position: absolute; 
+	background-image: url('img/lamp.png');
+	transition: background 0.4s, color 0.4s;
+}
+
+.nav-tabs.nav-justified > li.active > a:hover > div > #icone3, .nav-tabs.nav-justified > li > a:hover > div > #icone3 { 
+	background-image: url('img/lamp.png');
+}
+
+.nav-tabs.nav-justified > li.active  > a > div > #icone3 {
+	background-image: url('img/lamp2.png');
+}
+/*-*/
+
+/*-- Contato --*/
+#icone4 {
+	float: left;
+	width: 17px;
+	height: 25px; 
+	margin-left: 60px; 
+	position: absolute; 
+	background-image: url('img/sign.png');
+	transition: background 0.4s, color 0.4s;
+}
+
+.nav-tabs.nav-justified > li.active > a:hover > div > #icone4, .nav-tabs.nav-justified > li > a:hover > div > #icone4 {
+	background-image: url('img/sign.png');
+}
+
+.nav-tabs.nav-justified > li.active  > a > div > #icone4 {
+	background-image: url('img/sign2.png');
+}
+/*-*/
+/*==*/
+/*## ======== ##*/
+
+/*## Sobre Mim ##*/
+.lkface {
+	font-size: 20px;
+	color: #58595b;
+	font-weight: bold;
+}
+
+.lkface:hover {
+	color: #f51a25;
+}
+
+.lkemail {
+	font-size: 14.5px;
+	color: #58595b;
+	font-weight: bold;
+}
+
+.lkemail:hover {
+	color: #f51a25;
+}
+
+.Hob_Int {
+	margin-left: 20px;
+}
+
+.lk_background{
+	width: 291px;
+	height: 70px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	color: #58595b;
+}
+
+.box {
+	cursor: pointer;
+	width: 291px;
+	height: 70px;
+	border: 1px solid #58595b;
+	position: relative;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	transition: background 0.4s, color 0.4s;
+}
+
+.box:hover{
+	background-color: rgba(30,58,79,0.3);
+}
+
+.box2 {
+	cursor: pointer;
+	width: 291px;
+	height: 70px;
+	border: 1px solid #58595b;
+	position: relative;
+	border-radius: 5px;
+	margin-left: 48.5px;
+	display: flex;
+	align-items: center;
+	transition: background 0.4s, color 0.4s;
+}
+
+.box2:hover{
+	background-color: rgba(30,58,79,0.3);
+}
+/*## ======== ##*/
+
+/*## Curriculo ##*/
+.titulos_curriculo span{
+	color: #1c87e5;
+	font-weight: bold;
+}
+
+.grid_nivel {
+	display: flex;
+}
+
+.margin_nivel {
+	margin-left: 150px;
+	position: absolute;
+}
+
+.subtituloskill {
+	margin-bottom: 8px;
+	font-weight: bold;
+}
+/*## ======== ##*/
+
+/*## Portfolio ##*/
+.texto_port{
+	font-family: "Microsoft Sans Serif";
+	color: #58595b;
+	font-size: 16px;
+	margin-bottom: 40px;
+}
+
+#titulosProjetos h2{
+	font-size: 28px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+	color: #1c87e5;
+}
+
+#titulosProjetos h1{
+	font-size: 40px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+	color: #1c87e5;
+}
+
+#titulosProjetos span{
+	font-size: 24px;
+	color: #fc584b;
+}
+.borda_img{
+	border: 1px solid #5c1cb8;
+}
+
+.background_img{
+	margin-left: 40px;
+}
+
+.margin_texto{
+	margin-bottom: 40px;
+}
+
+.linkimg{
+	display: block;
+	margin: 10px 0px 10px 0px;
+	position: relative;
+}
+
+.image-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	top: 0;
+	overflow: hidden;
+	text-align: center;
+	background-color: rgba(30,58,79,0.3);
+	opacity: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-transition: all 450ms ease-out 0s;
+	-moz-transition: all 450ms ease-out 0s;
+	-o-transition: all 450ms ease-out 0s;
+	transition: all 450ms ease-out 0s;
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.linkimg:hover .image-overlay {
+	opacity: 1;
+	-webkit-transform: rotateY(0deg);
+  	-moz-transform: rotateY(0deg);
+  	-ms-transform: rotateY(0deg);
+  	transform: rotateY(0deg);
+}
+
+.image-overlay button, .image-overlay button:focus{
+	font-size: 11px;
+	background-color: #5c1cb8;
+	color: white;
+	text-transform: uppercase;
+	transition: background 0.4s, color 0.4s;
+	outline: none;
+}
+
+.image-overlay button:hover{
+	background-color: #7c25f8;
+	color: white;
+}
+
+#semDominio:hover{
+	cursor: pointer;
+}
+/*## ======== ##*/
+
+/*## Contato ##*/
+.lkemail2 {
+	font-weight: bold;
+	color: #58595b;
+}
+
+.lkemail2:hover {
+	color: #f51a25;
+}
+
+.titulocontato{
+	font-size: 25px;
+	margin-top: 10px;
+}
+
+.box3 {
+	width: 291px;
+	height: 155px;
+	border: 0px solid #58595b;
+	position: relative;
+	border-radius: 5px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+.box4 {
+	margin-left: 48.5px;
+	width: 291px;
+	height: 155px;
+	border: 0px solid #58595b;
+	position: relative;
+	border-radius: 5px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+/*## ======== ##*/
+
+/*## Utilities ##*/
+.margintop{
+	margin-top: 50px;
+	color: #58595b;
+}
+
+.texto{
+	font-family: "Microsoft Sans Serif";
+	color: #58595b;
+	font-size: 16px;
+	margin-left: 50px;
+}
+
+.texto2 {
+	margin-left: 50px;
+}
+
+.background2 {
+	background-color: white;
+	border-radius: 20px;
+	position: relative;
+	margin-top: 10px;
+}
+
+.background3 {
+	background-color: #ff2b1b;
+	border-radius: 20px;
+	position: relative;
+	padding-top: 0.02px;
+	padding-bottom: 3px;
+}
+
+.background_h3 {
+	width: 308px;
+	height: 35px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-left: 17px;
+	background-image: url('img/backh3.png');
+	background-repeat: no-repeat;
+}
+/*## ======== ##*/
+/*#==============================================#*/
+
+
+/*#### Media queries ####*/
+
+@media screen and (max-width: 767px) {
+	
+	.box, .box4, .Hob_Int {
+		margin-left: 0px;
+	}
+
+	.box2 {
+		margin-left: 0px;
+		margin-top: 5px;
+	}
+
+	.margintop{
+		margin-top: 50px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.texto, .texto2{
+		margin-left: 20px;
+	}
+
+	.background_img{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+
+@media screen and (max-width: 1200px) and (min-width: 767px) {
+	.box2,.box4 {
+		margin-top: 10px;
+		margin-left: 0px;
+	}
+
+	div#icone1, div#icone2, div#icone3, div#icone4{
+		opacity: 0;
+	}
+
+	.margin_nivel {
+		margin-left: 50px;
+	}
+
+	.margintop{
+		margin-top: 50px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	
+}
+
+@media screen and (min-width: 992px) {
+	
+}
+
+@media screen and (min-width: 1200px) {
+
+}
