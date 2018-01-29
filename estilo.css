@@ -220,6 +220,7 @@ h3{
 #box_download .box_contato{
 	background-color: rgba(255,43,27,1);
 	width: 220px;
+	height: 55px;
 }
 
 #box_download .box_contato:hover{
