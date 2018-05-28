@@ -382,6 +382,10 @@ h3{
 	margin-left: 50px;
 }
 
+.justificar_texto {
+	text-align: justify;
+}
+
 .box_contato {
 	cursor: pointer;
 	width: 291px;
