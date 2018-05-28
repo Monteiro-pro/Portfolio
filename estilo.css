@@ -1,4 +1,3 @@
-
 /*## Tipografia Geral ##*/
 body{
 	background-image: url("img/back.png");
@@ -207,6 +206,10 @@ h3{
 .subtitulos_kill {
 	margin-bottom: 8px;
 	font-weight: bold;
+}
+
+.titulos_curriculo .subtitulos_kill{
+	color: #58595b;
 }
 
 #box_download div,#box_download span{
